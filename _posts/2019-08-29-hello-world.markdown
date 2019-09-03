@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello world!"
 date:   2019-08-29 16:54:57 +0800
-categories: jekyll update
+categories: Other
 ---
 博客开篇，还是用程序员的习惯写一个HELLO WORLD， 未来期望用文字来记录自己的一些思考。
 
