@@ -8,7 +8,7 @@ categories: Coding
 本文来源于Codility 的一道题目.[原题传送门](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/flags/)
 
 
-### 题目描述
+### Question
 
 在给定一个数组中，存在0 - k个peak节点(值大于左右2个邻居的), 目标是将旗子放到peak的位置，并且两个peak的距离(下标差)必须大于等于总旗子数量。
 
