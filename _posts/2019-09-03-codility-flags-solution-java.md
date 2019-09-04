@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Codility flags solution in Java"
+description: Codility Flag 题解，java版本
 date:   2019-09-03 10:40:00 +0800
-categories: Coding
+category: coding
+tags: [coding, codility, leetcode, flags]
 ---
 
 本文来源于Codility 的一道题目.[原题传送门](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/flags/)
