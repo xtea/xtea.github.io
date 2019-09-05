@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Integer to English Words solution in Java"
+title:  "Leetcode Integer to English Words solution in Java"
 description: Integer to English Words solution in Java leetcode273
 date:   2019-09-04 17:40:00 +0800
 category: coding
