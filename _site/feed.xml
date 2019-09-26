@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-21T19:22:49+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Li Xiaomeng’s  Blog</title><subtitle>Coding | Design | Thinking. 醉里挑灯看剑，梦回吹角连营。</subtitle><entry><title type="html">[LeetCode] 269.Alien Dictionary 火星词典</title><link href="http://localhost:4000/coding/2019/09/21/leetcode-269-alien-dictionary.html" rel="alternate" type="text/html" title="[LeetCode] 269.Alien Dictionary 火星词典" /><published>2019-09-21T18:58:00+08:00</published><updated>2019-09-21T18:58:00+08:00</updated><id>http://localhost:4000/coding/2019/09/21/leetcode-269-alien-dictionary</id><content type="html" xml:base="http://localhost:4000/coding/2019/09/21/leetcode-269-alien-dictionary.html">&lt;p&gt;&lt;strong&gt;Leetcode 269, Alien Dictionary&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-26T16:32:03+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Li Xiaomeng’s  Blog</title><subtitle>Coding | Design | Thinking. 醉里挑灯看剑，梦回吹角连营。</subtitle><entry><title type="html">应届生面试不要做这3件事</title><link href="http://localhost:4000/interview/2019/09/24/for-new-grad-interview-tips.html" rel="alternate" type="text/html" title="应届生面试不要做这3件事" /><published>2019-09-24T17:50:00+08:00</published><updated>2019-09-24T17:50:00+08:00</updated><id>http://localhost:4000/interview/2019/09/24/for-new-grad-interview-tips</id><content type="html" xml:base="http://localhost:4000/interview/2019/09/24/for-new-grad-interview-tips.html">&lt;p&gt;作为一个毕业快十年的”老”程序员最近被抓壮丁，参加校园招聘作为一、二面的面试官。连续一周的面试有一些感悟，总结一下大家失败的原因，给未来的应届生一些建议和行为指导。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.不要迟到&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;迟到的行为非常恶劣，会给人第一印象非常差。另外迟到会让应聘者非常慌张，不利于面试发挥。总之，宁可取消面试也千万不要迟到。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.要闷头做题&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;对于工程师的面试总要一项就是写代码，但是千万不要拿到一个题立刻开始写代码，这个情况基本就是Fail了，不管是否写的正确。&lt;/p&gt;
+
+&lt;p&gt;原因是你缺少有效沟通，看到一道题要先和面试官确定理解是否正确，输入值的范围(正数/负数) 、是否有序等、是否可以用方法A，时间复杂度的要求、空间复杂度的要求。这些问题都需要逐一的澄清才能往后做。沟通是很重要的技能，这将决定你今后的职业生涯的高度。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3.不要自High&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;大多数同学基于一个面试官的问题，迫切的希望引入到自己的领地，把准备的面经快速的讲出来。但是没有抓住重点，也许面试官想问的根本不是这个问题。所以保持一个良好的问题澄清习惯，回答之前先确定是否是你心中的问题，然后在进一步回答。&lt;/p&gt;
+
+&lt;p&gt;Btw，现在的应届生都很厉害，技术都在伯仲之间。但是还是要做出一些差异性，比如有自己的开源项目是很加分的。&lt;/p&gt;</content><author><name></name></author><category term="interview" /><category term="interview" /><summary type="html">作为一个毕业快十年的”老”程序员最近被抓壮丁，参加校园招聘作为一、二面的面试官。连续一周的面试有一些感悟，总结一下大家失败的原因，给未来的应届生一些建议和行为指导。</summary></entry><entry><title type="html">[LeetCode] 269.Alien Dictionary 火星词典</title><link href="http://localhost:4000/coding/2019/09/21/leetcode-269-alien-dictionary.html" rel="alternate" type="text/html" title="[LeetCode] 269.Alien Dictionary 火星词典" /><published>2019-09-21T18:58:00+08:00</published><updated>2019-09-21T18:58:00+08:00</updated><id>http://localhost:4000/coding/2019/09/21/leetcode-269-alien-dictionary</id><content type="html" xml:base="http://localhost:4000/coding/2019/09/21/leetcode-269-alien-dictionary.html">&lt;p&gt;&lt;strong&gt;Leetcode 269, Alien Dictionary&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;使用BFS的拓扑排序.&lt;/p&gt;
 
