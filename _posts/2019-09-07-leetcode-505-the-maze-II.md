@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "[LeetCode] 505. The Maze II 迷宫II "
-description: [LeetCode] 505. The Maze II 迷宫II Java 实现
-date:   2019-09-07 12:40:00 +0800
+title: "[LeetCode] 505. The Maze II 迷宫II"
+description: The Maze II 迷宫II Java 实现
+date: 2019-09-07 12:40:00 +0800
 category: coding
 tags: [coding, leetcode, leetcode505]
 ---
@@ -10,7 +10,6 @@ tags: [coding, leetcode, leetcode505]
 **Leetcode 505, The MazeII** 
 
 这个题可以用DFS、BFS或者使用Dijkstra算法，以下是我使用Dijkstra实现。
-
 
 
 ```java
@@ -77,7 +76,7 @@ tags: [coding, leetcode, leetcode505]
     }
 
     private List<Point> findNextPoints(Point point, int[][] maze) {
-        int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        int[][] directions = { {1, 0}, {-1, 0}, {0, 1}, {0, -1} };
         List<Point> ans = new ArrayList<>();
         // go four directions.
         for (int i = 0; i < directions.length; i++) {
@@ -106,3 +105,5 @@ tags: [coding, leetcode, leetcode505]
     }
 }
 ```
+
+
