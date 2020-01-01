@@ -9,7 +9,7 @@ tags: [telegram, 搜索]
 
 看到网上有很多人推荐电报群组的导航网站，其实每个人都可以建立一个自己的搜索引擎。
 
-访问这个链接看效果: [http://cse.google.com/cse?cx=006249643689853114236:meozern20ky](http://cse.google.com/cse?cx=006249643689853114236:meozern20ky){:target="_blank"}
+访问这个链接看效果: [https://xtea.io/telegram_search]
 
 
 其实原理很简单，基于google提供的自定义搜索 `cse.google.com`.
