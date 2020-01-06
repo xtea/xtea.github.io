@@ -1,46 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="电报群组搜索，全网最全的群组索引。支持群组、聊天记录和账号搜索" />
-    <meta name="keywords" content="TELEGRAM,电报群,搜索,电报搜索" />
-    <link rel="shortcut icon" href="img/2020/favicon.ico" type="image/x-icon" />
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>名刀电报群组搜索</title>
-  
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
-    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
-    <!--[if lt IE 9]>
-      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <![endif]-->
-    <script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "https://hm.baidu.com/hm.js?25daafbd5ec5e5d24059b85618dd14fb";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
-	
-  </head>
-  <body>
-    <div class="container">
-      <div class="page-header">
-        <h1><a href="ts.html">名刀电报群组搜索</a></h1>
-      </div>
-      <p class="lead">输入关键词点击搜索按钮进行搜索，支持群组、聊天记录和账号搜索。
-        <span class="label label-danger">注意：请先打开科学上网后使用本站.</span>
-      </p>
-      <script>
-        (function(opts_){var f=this||self,h=/^[\w+/_-]+[=]{0,2}$/,k=null,l=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&
+(function(opts_){var f=this||self,h=/^[\w+/_-]+[=]{0,2}$/,k=null,l=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&
 !a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},m=function(a,b){function c(){}c.prototype=b.prototype;a.prototype=new c;a.prototype.constructor=a};var n=function(a){if(Error.captureStackTrace)Error.captureStackTrace(this,n);else{var b=Error().stack;b&&(this.stack=b)}a&&(this.message=String(a))};m(n,Error);n.prototype.name="CustomError";var p=function(a,b){a=a.split("%s");for(var c="",e=a.length-1,d=0;d<e;d++)c+=a[d]+(d<b.length?b[d]:"%s");n.call(this,c+a[e])};m(p,n);p.prototype.name="AssertionError";var q=function(a,b,c){if(!a){var e="Assertion failed";if(b){e+=": "+b;var d=Array.prototype.slice.call(arguments,2)}throw new p(""+e,d||[]);}},t=function(a,b){throw new p("Failure"+(a?": "+a:""),Array.prototype.slice.call(arguments,1));};var u=function(a,b){a:{try{var c=a&&a.ownerDocument,e=c&&(c.defaultView||c.parentWindow);e=e||f;if(e.Element&&e.Location){var d=e;break a}}catch(r){}d=null}if(d&&"undefined"!=typeof d[b]&&(!a||!(a instanceof d[b])&&(a instanceof d.Location||a instanceof d.Element))){d=typeof a;if("object"==d&&null!=a||"function"==d)try{var g=a.constructor.displayName||a.constructor.name||Object.prototype.toString.call(a)}catch(r){g="<object could not be stringified>"}else g=void 0===a?"undefined":null===a?"null":
 typeof a;t("Argument is not a %s (or a non-Element, non-Location mock); got: %s",b,g)}};var x=function(a,b){this.i=a===v&&b||"";this.l=w};x.prototype.toString=function(){return"Const{"+this.i+"}"};var y=function(a){if(a instanceof x&&a.constructor===x&&a.l===w)return a.i;t("expected object of type Const, got '"+a+"'");return"type_error:Const"},w={},v={};var z=function(){this.f=""};z.prototype.toString=function(){return"SafeScript{"+this.f+"}"};z.prototype.a=function(a){this.f=a};(new z).a("");var B=function(){this.b="";this.j=null;this.m=A};B.prototype.toString=function(){return"TrustedResourceUrl{"+this.b+"}"};
 var C=function(a){if(a instanceof B&&a.constructor===B&&a.m===A)return a.b;t("expected object of type TrustedResourceUrl, got '"+a+"' of type "+l(a));return"type_error:TrustedResourceUrl"},E=function(a,b){var c=y(a);if(!aa.test(c))throw Error("Invalid TrustedResourceUrl format: "+c);a=c.replace(ba,function(e,d){if(!Object.prototype.hasOwnProperty.call(b,d))throw Error('Found marker, "'+d+'", in format string, "'+c+'", but no valid label mapping found in args: '+JSON.stringify(b));e=b[d];return e instanceof
@@ -87,13 +45,3 @@ document.getElementsByTagName("head")[0].appendChild(N(W))};
   "cselibVersion": "8b2252448421acb3",
   "usqp": "CAI\u003d"
 });
-      </script>
-	   <div class="gcse-search"></div>
-    </div>
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">对本产品有任何意见，请<a href="https://support.qq.com/product/113664" target="blank">点击此处</a>进行反馈。</p>
-      </div>
-    </footer>
-  </body>
-</html>
