@@ -62,6 +62,13 @@ code {
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39391643-2"></script>
 	<script>
+    var jsLoaded = false;
+    setTimeout("callback()", 3500);
+    function callback() {
+        if (!jsLoaded) {
+            document.getElementById("error").setAttribute("class", "alert alert-danger");
+        }
+    }
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
@@ -76,9 +83,14 @@ code {
       <div class="page-header">
         <h2 class="text-center"><a href="ts.html">名刀电报群组搜索</a></h2>
       </div>
+      <div id="error" class="alert alert-danger hidden" role="alert">
+        <h4>错误！</h4>
+        由于你没有开启科学上网，无法访问本网站服务！
+      </div>
+
       <p class="lead">输入关键词点击搜索按钮进行搜索，支持群组、聊天记录和账号搜索。
       </p>
-     	<script async src="https://cse.google.com/cse.js?cx=006249643689853114236:meozern20ky"></script>
+     	<script async src="https://cse.google.com/cse.js?cx=006249643689853114236:meozern20ky" onload="jsLoaded=true"></script>
 	   <div class="gcse-search"></div>
 	   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- 电报搜索-banner -->
