@@ -206,12 +206,12 @@ for ch in "Runoob" {
         someDict.updateValue("One 新的值", forKey: 1) // 修改字典元素
 
         var removedValue = someDict.removeValue(forKey: 2) // 删除字典元素
-        
+
         // 遍历字典
         for (key, value) in someDict {
            print("字典 key \(key) -  字典 value \(value)")
         }
-        
+
         let dictKeys = [Int](someDict.keys) // 所有的key
         let dictValues = [String](someDict.values) // 所有的value
 
@@ -220,26 +220,12 @@ for ch in "Runoob" {
 ```
 
 
-### 内置库
-
-排序
-字符串
-
-```
-import Cocoa
-
-var name = "菜鸟教程"
-var site = "http://www.runoob.com"
-
-print("\(name)的官网地址为：\(site)")
-```
-
 
 ### 面向对象(或函数式编程)
 
 
 ### 高级特性
-TBD
+
 
 ## 总结
 
