@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "30分钟学习swift语言-Swift入门教程"
+title:  "30分钟入门Swift语言简明教程"
 description: X分钟学习swift简要语言教程
 date:   2020-04-06 10:40:00 +0800
 category: tools
@@ -10,7 +10,7 @@ tags: [swift, 简要教程]
 作为一个有多年编程经验的熟练工程师，学习一门新语言的成本应该是非常低的。下面我将学习swift语言的过程记录下来，及帮助自己做个笔记，也帮助swift新手们尝鲜。
 
 
-# 学以致用
+## 学以致用
 
 首先要时刻铭记，学习的目的就是为了在实践中应用，要带着问题和目的去学习，而不是为了学习而学习。
 
@@ -18,12 +18,14 @@ tags: [swift, 简要教程]
 **学习 -> 实践 -> 遇到问题 -> 学习 -> 实践 ...**
 
 
-# 准备内容
+
+## 准备内容
 
 一台安装了Xcode的Mac电脑。
 
 
-# 开始学习
+
+## 开始学习
 
 ### 1- Hello World
 
@@ -65,6 +67,56 @@ print(myString)
         var flag:Bool = true // 布尔类型
 ```
 
+**数组**
+
+创建数组方式一，以下实例创建了一个类型为 Int ，数量为 3，初始值为 0 的空数组：
+
+```
+var someInts = [Int](repeating: 0, count: 3)
+
+```
+
+创建数组方式二：
+
+```
+
+var someInts:[Int] = [10, 20, 30]
+```
+
+可以直接使用下标访问数组，下标从0开始。新增元素可以用使用append方法或者直接 +=
+
+```
+        var someInts = [Int]()
+        someInts.append(20) // 添加 20
+        someInts.append(30)	// 添加 30
+        someInts += [40]	// 添加 40
+```
+
+> 数组的长度使用 count 属性; isEmpty来判断是否为空数组。
+
+
+**字符串**
+
+掌握字符串的处理是入门一个开发语言的基本操作，因此要重点学习下字符串处理相关的方法。
+
+
+```
+var greeting = "Hi"
+var name = "jack"
+
+var msg = greeting + " " + name
+print(msg) // Hi jack
+var msg2 = "\(greeting) \(name)"
+print(msg2) // Hi jack
+
+print(msg == msg2) // true
+
+```
+
+格式化字符串和数字时候直接使用 "\(parm)"来替代既可以，非常方便。
+
+> 属性count和isEmpty在字符串处理同样适用。
+
 
 **关于nil**
 
@@ -87,25 +139,91 @@ print(myString)
 但跨越多行 */
 ```
 
-
-### 字符串
-
-
-
 ### 程序结构
-顺序
-选择
-循环
+
+程序的3中结构：顺序、选择和循环。下面看一下如果来处理选择和循环。
+
+**选择**
+
+不需要括号包含布尔表达式, 其它与Java相同。
+
+```
+if boolean_expression {
+   /* 如果布尔表达式为真将执行的语句 */
+}
+
+var a = 1 
+
+// && = 与 ， || = 或
+if a  < 10 {
+	print("a 小于 10")
+}
+
+```
+
+**循环**
+
+循环数组
+
+```
+var someStrs = [String]()
+
+someStrs.append("Apple")
+someStrs.append("Amazon")
+someStrs.append("Runoob")
+someStrs += ["Google"]
+
+// 仅元素
+for item in someStrs {
+   print(item)
+}
+
+// 元素与下标
+for (index, item) in someStrs.enumerated() {
+    print("在 index = \(index) 位置上的值为 \(item)")
+}
+```
+
+循环字符串
+
+```
+for ch in "Runoob" {
+    print(ch)
+}
+```
+
+其余与其它语言无异同。
+
 
 ### 数据结构
-array
-dict、hash table
-set
-list
+
+数组刚才已经提到了，下面讲解下字典（对应Java里的Hash table)
+
+```
+    	var someDict:[Int:String] = [1:"One", 2:"Two", 3:"Three"]
+        var someVar = someDict[1]  // 访问字典元素
+
+        someDict.updateValue("One 新的值", forKey: 1) // 修改字典元素
+
+        var removedValue = someDict.removeValue(forKey: 2) // 删除字典元素
+        
+        // 遍历字典
+        for (key, value) in someDict {
+           print("字典 key \(key) -  字典 value \(value)")
+        }
+        
+        let dictKeys = [Int](someDict.keys) // 所有的key
+        let dictValues = [String](someDict.values) // 所有的value
+
+        print("输出字典的键(key)")
+        print("输出字典的值(value)")
+```
+
 
 ### 内置库
 
-
+排序
+字符串
 
 ```
 import Cocoa
@@ -123,7 +241,7 @@ print("\(name)的官网地址为：\(site)")
 ### 高级特性
 TBD
 
-# 总结
+## 总结
 
 
 
