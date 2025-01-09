@@ -92,7 +92,7 @@ code {
       <div>
       <ol class="breadcrumb">
         <li class="active">综合版</li>
-        <li><a href="ts_group.html">群组版</a></li>
+        <!-- <li><a href="ts_group.html">群组版</a></li> -->
       </ol>
     </div>
  <!--    <p class="alert alert-success">电报群搜索机器人已经上线， 欢迎进入群组搜索 <a href="https://t.me/mingdaoso">@hao6bot</a></p>   -->
@@ -149,6 +149,29 @@ code {
         });
         return query;
       };
+
+        // 定义回调函数
+        const myWebResultsRenderedCallback = () => {
+        const links = document.querySelectorAll('.gsc-webResult .gs-title');
+        links.forEach(link => {
+            if (link instanceof HTMLAnchorElement) {
+            if (link.getAttribute('data-customized')) return; // 避免重复添加事件
+
+            const originalHref = link.getAttribute('href'); // 获取原始链接
+            if (originalHref) {
+                // 防止默认行为并重定向
+                link.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.open(originalHref, '_blank'); // 新窗口打开原始链接
+                });
+
+                // 标记为已自定义
+                link.setAttribute('data-customized', 'true');
+            }
+            }
+        });
+        };
+
       // Install the callback.
       window.__gcse || (window.__gcse = {});
         window.__gcse.searchCallbacks = {
@@ -157,6 +180,7 @@ code {
           },
           web: {
             starting: mySearchStartingCallback,
+            rendered: myWebResultsRenderedCallback,
           },
       };
   </script>
