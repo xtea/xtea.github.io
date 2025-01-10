@@ -124,25 +124,25 @@ code {
      <script async src="https://cse.google.com/cse.js?cx=006249643689853114236:a3iibfpwexa"></script>
      <div class="gcse-search"></div>
      <script>
-        // const mySearchStartingCallback = (gname, query) => {
-        //   // 通过 gtag 发送搜索事件
-        //   gtag('event', 'search', {
-        //     event_category: 'Custom Search',
-        //     event_label: query,
-        //     value: 1
-        //   });
-        //   return query;
-        // };
-        // // Install the callback.
-        // window.__gcse || (window.__gcse = {});
-        //   window.__gcse.searchCallbacks = {
-        //     image: {
-        //       starting: mySearchStartingCallback,
-        //     },
-        //     web: {
-        //       starting: mySearchStartingCallback,
-        //     },
-        // };
+        const mySearchStartingCallback = (gname, query) => {
+          // 通过 gtag 发送搜索事件
+          gtag('event', 'search', {
+            event_category: 'Custom Search',
+            event_label: query,
+            value: 1
+          });
+          return query;
+        };
+        // Install the callback.
+        window.__gcse || (window.__gcse = {});
+          window.__gcse.searchCallbacks = {
+            image: {
+              starting: mySearchStartingCallback,
+            },
+            web: {
+              starting: mySearchStartingCallback,
+            },
+        };
     </script>
     </div>
      <!-- Begin page content -->
