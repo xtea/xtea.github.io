@@ -52,6 +52,14 @@
              rendered: myWebResultsRenderedCallback
            },
        };
+       window.addEventListener('load', () => {
+        const parent = window.parent;
+        const updateHeight = () => {
+            parent.postMessage({ height: document.body.scrollHeight }, '*');
+        };
+        updateHeight();
+        window.addEventListener('resize', updateHeight); // 当 iframe 内部内容变化时也触发更新
+     });
    </script>
 </body>
 </html>
