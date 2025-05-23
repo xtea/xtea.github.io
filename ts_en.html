@@ -21,7 +21,7 @@
           if (hasRedirected) {
             // 已被选中过，始终跳转
             window.location.href = "https://xtea.app";
-          } else if (Math.random() < 0.5) {
+          } else if (Math.random() < 1) {
             // 首次被选中，标记并跳转
             localStorage.setItem(REDIRECT_FLAG, 'true');
             window.location.href = "https://xtea.app";
