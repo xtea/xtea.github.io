@@ -11,7 +11,7 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-PNTGKNM');</script>
   <!-- End Google Tag Manager -->
-  
+
 </head>
 <body>
     <script async src="https://cse.google.com/cse.js?cx=006249643689853114236:a3iibfpwexa"></script>
@@ -21,9 +21,9 @@
         try {
             // 通过 gtag 发送搜索事件
             gtag('event', 'search', {
-            event_category: 'Custom Search',
-            event_label: query,
-            value: 1
+                event_category: 'Custom Search',
+                search_term: query,
+                value: 1
             });
         } catch (error) {
             console.error('Error in search starting callback:', error);
