@@ -1,2 +1,8 @@
 User-agent: *
-Disallow:
+Allow: /
+
+Disallow: /test.html
+Disallow: /_site/
+Disallow: /e1bcab9efac2f19e7247785712e44d11.html
+
+Sitemap: https://xtea.io/sitemap.xml
