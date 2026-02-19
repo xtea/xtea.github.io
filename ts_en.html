@@ -785,7 +785,17 @@ iframe {
           
           <!-- Search Frame -->
           <div class="search-frame-container">
-            <iframe src="https://xtea.pages.dev/search" loading="lazy"></iframe>
+            <iframe id="search-frame" src="https://xtea.pages.dev/search" loading="lazy"></iframe>
+            <script>
+              (function() {
+                var params = new URLSearchParams(window.location.search);
+                var q = params.get('q');
+                if (q) {
+                  var frame = document.getElementById('search-frame');
+                  frame.src = 'https://xtea.pages.dev/search?q=' + encodeURIComponent(q);
+                }
+              })();
+            </script>
           </div>
           
           <!-- Bottom Ad Unit -->
