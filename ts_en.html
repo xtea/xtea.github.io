@@ -387,6 +387,235 @@ iframe {
           gap: 8px;
         }
 }
+
+      /* === SEO Content Sections === */
+      .seo-section {
+        max-width: 1200px;
+        margin: 30px auto 0;
+        padding: 0 15px;
+      }
+      .seo-section-title {
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 25px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      }
+      .seo-section-subtitle {
+        color: rgba(255,255,255,0.7);
+        text-align: center;
+        margin-top: -15px;
+        margin-bottom: 25px;
+        font-size: 0.95rem;
+      }
+
+      /* Stats Bar */
+      .stats-bar {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin: 30px auto;
+        max-width: 1200px;
+        padding: 20px;
+      }
+      .stat-item {
+        text-align: center;
+        color: #fff;
+      }
+      .stat-number {
+        font-size: 1.8rem;
+        font-weight: 700;
+        background: linear-gradient(135deg, #00d4ff, #0088cc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .stat-label {
+        font-size: 0.85rem;
+        color: rgba(255,255,255,0.6);
+        margin-top: 4px;
+      }
+
+      /* Category Cards */
+      .categories-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 15px;
+      }
+      .category-card {
+        background: var(--card-bg);
+        border-radius: 14px;
+        padding: 20px 12px;
+        text-align: center;
+        text-decoration: none;
+        color: var(--text-dark);
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      }
+      .category-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 30px rgba(0,136,204,0.3);
+        text-decoration: none;
+        color: var(--primary);
+      }
+      .category-icon {
+        font-size: 2rem;
+        margin-bottom: 8px;
+        display: block;
+      }
+      .category-name {
+        font-size: 0.85rem;
+        font-weight: 600;
+      }
+
+      /* How-to Steps */
+      .steps-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+      .step-card {
+        background: var(--card-bg);
+        border-radius: 16px;
+        padding: 25px 20px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      }
+      .step-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, var(--primary) 0%, #00aaff 100%);
+        color: #fff;
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+      }
+      .step-card h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0 0 8px;
+        color: var(--text-dark);
+      }
+      .step-card p {
+        font-size: 0.85rem;
+        color: var(--text-light);
+        margin: 0;
+      }
+
+      /* Why XTEA */
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .feature-card {
+        background: var(--card-bg);
+        border-radius: 16px;
+        padding: 25px 20px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      }
+      .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .feature-card h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0 0 8px;
+      }
+      .feature-card p {
+        font-size: 0.85rem;
+        color: var(--text-light);
+        margin: 0;
+      }
+
+      /* FAQ */
+      .faq-list {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .faq-item {
+        background: var(--card-bg);
+        border-radius: 12px;
+        margin-bottom: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      }
+      .faq-question {
+        padding: 18px 20px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.95rem;
+        user-select: none;
+      }
+      .faq-question::after {
+        content: '+';
+        font-size: 1.3rem;
+        color: var(--primary);
+        transition: transform 0.3s ease;
+      }
+      .faq-item.active .faq-question::after {
+        transform: rotate(45deg);
+      }
+      .faq-answer {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        font-size: 0.9rem;
+        color: var(--text-light);
+        line-height: 1.6;
+      }
+      .faq-item.active .faq-answer {
+        padding: 0 20px 18px;
+        max-height: 300px;
+      }
+
+      /* Trending Tags */
+      .trending-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      .trending-tag {
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: rgba(255,255,255,0.9);
+        padding: 8px 16px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+      }
+      .trending-tag:hover {
+        background: var(--primary);
+        border-color: var(--primary);
+        color: #fff;
+        text-decoration: none;
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 768px) {
+        .categories-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+        }
+        .stat-number { font-size: 1.4rem; }
+        .stats-bar { gap: 15px; }
+        .seo-section-title { font-size: 1.3rem; }
+      }
 </style>
     
 <!-- Google tag (gtag.js) -->
@@ -399,6 +628,105 @@ iframe {
 </script>
     
     <title>XTEA - #1 Telegram Search Engine | Find Channels, Groups & Bots</title>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "XTEA",
+      "url": "https://xtea.io",
+      "description": "The #1 Telegram search engine. Find channels, groups, and bots instantly.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://xtea.io/ts_en.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "XTEA",
+      "url": "https://xtea.io",
+      "logo": "https://xtea.io/favicon.ico",
+      "sameAs": [],
+      "description": "XTEA is the leading Telegram search engine, helping users discover channels, groups, and bots across 143 countries."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is XTEA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "XTEA is the #1 Telegram search engine that helps you discover and find Telegram channels, groups, and bots. With over 50,000 channels indexed across 143 countries, XTEA provides fast, accurate, and free search results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I search for Telegram channels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply enter keywords related to your interest in the XTEA search box. You'll get instant results showing relevant Telegram channels, groups, and bots. Click on any result to view details and join directly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is XTEA free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, XTEA is 100% free to use. You can search for unlimited Telegram channels, groups, and bots without any registration or payment. We also offer a Pro version for an ad-free experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many Telegram channels does XTEA index?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "XTEA indexes over 50,000 Telegram channels, groups, and bots from 143 countries. Our database is updated in real-time to ensure you always find the latest and most relevant results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is XTEA safe to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, XTEA is completely safe. We don't require any personal information or Telegram login. All searches are private and we don't track or store your search history."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I find Telegram groups by topic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can find Telegram groups by topic by entering relevant keywords in the search box, or by browsing our popular categories like Crypto, News, Technology, Education, and Entertainment. Each category page lists curated channels and groups."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between Telegram channels and groups?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Telegram channels are one-way broadcast platforms where admins post content to subscribers. Groups are interactive spaces where all members can send messages and participate in discussions. XTEA helps you find both channels and groups."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I search for Telegram bots on XTEA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! XTEA indexes Telegram bots alongside channels and groups. Simply search for bot-related keywords or the specific bot name to find what you're looking for."
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
 	  <!-- Google Tag Manager (noscript) -->
@@ -479,14 +807,202 @@ iframe {
         </div>
       </div>
       
+      <!-- Stats Bar -->
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-number">50,000+</div>
+          <div class="stat-label">Channels Indexed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10M+</div>
+          <div class="stat-label">Searches Performed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">143</div>
+          <div class="stat-label">Countries Covered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Real-time Updates</div>
+        </div>
+      </div>
+
+      <!-- Popular Categories -->
+      <section class="seo-section">
+        <h2 class="seo-section-title">📂 Popular Categories</h2>
+        <p class="seo-section-subtitle">Browse Telegram channels by topic</p>
+        <div class="categories-grid">
+          <a href="channels/news.html" class="category-card">
+            <span class="category-icon">📰</span>
+            <span class="category-name">News & Media</span>
+          </a>
+          <a href="channels/crypto.html" class="category-card">
+            <span class="category-icon">💰</span>
+            <span class="category-name">Crypto & Finance</span>
+          </a>
+          <a href="channels/education.html" class="category-card">
+            <span class="category-icon">🎓</span>
+            <span class="category-name">Education</span>
+          </a>
+          <a href="channels/entertainment.html" class="category-card">
+            <span class="category-icon">🎬</span>
+            <span class="category-name">Entertainment</span>
+          </a>
+          <a href="channels/tech.html" class="category-card">
+            <span class="category-icon">💻</span>
+            <span class="category-name">Technology</span>
+          </a>
+          <a href="ts_en_group.html" class="category-card">
+            <span class="category-icon">🎮</span>
+            <span class="category-name">Gaming</span>
+          </a>
+          <a href="ts_en.html?q=shopping+deals" class="category-card">
+            <span class="category-icon">🛒</span>
+            <span class="category-name">Shopping & Deals</span>
+          </a>
+          <a href="ts_en.html?q=travel" class="category-card">
+            <span class="category-icon">🌍</span>
+            <span class="category-name">Travel</span>
+          </a>
+          <a href="ts_en.html?q=apps+tools" class="category-card">
+            <span class="category-icon">📱</span>
+            <span class="category-name">Apps & Tools</span>
+          </a>
+          <a href="ts_en.html?q=music" class="category-card">
+            <span class="category-icon">🎵</span>
+            <span class="category-name">Music</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- How to Use XTEA -->
+      <section class="seo-section" style="margin-top:40px;">
+        <h2 class="seo-section-title">🚀 How to Use XTEA</h2>
+        <p class="seo-section-subtitle">Find any Telegram channel in 3 simple steps</p>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Enter Keywords</h3>
+            <p>Type any topic, channel name, or keyword into the search box above. XTEA searches across thousands of indexed Telegram channels and groups.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Browse Results</h3>
+            <p>Explore the search results with channel descriptions, subscriber counts, and categories. Filter to find exactly what you're looking for.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Join & Enjoy</h3>
+            <p>Click on any result to open it directly in Telegram. Join channels, groups, or start using bots instantly — no registration needed.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why XTEA -->
+      <section class="seo-section" style="margin-top:40px;">
+        <h2 class="seo-section-title">✨ Why Choose XTEA?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <span class="feature-icon">🔍</span>
+            <h3>Powerful Search</h3>
+            <p>Advanced search engine that finds relevant Telegram channels, groups, and bots with pinpoint accuracy.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">⚡</span>
+            <h3>Real-time Index</h3>
+            <p>Our database is continuously updated to include the newest channels and freshest content from Telegram.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🛡️</span>
+            <h3>Safe & Private</h3>
+            <p>No login required. We don't track your searches or store personal data. Browse with complete peace of mind.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🆓</span>
+            <h3>100% Free</h3>
+            <p>Unlimited searches at no cost. No subscriptions, no hidden fees. Just pure Telegram discovery.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending Searches -->
+      <section class="seo-section" style="margin-top:40px;">
+        <h2 class="seo-section-title">🔥 Trending Searches</h2>
+        <div class="trending-tags">
+          <a href="ts_en.html?q=crypto+signals" class="trending-tag">Crypto Signals</a>
+          <a href="ts_en.html?q=breaking+news" class="trending-tag">Breaking News</a>
+          <a href="ts_en.html?q=python+programming" class="trending-tag">Python Programming</a>
+          <a href="ts_en.html?q=stock+market" class="trending-tag">Stock Market</a>
+          <a href="ts_en.html?q=movies+download" class="trending-tag">Movies</a>
+          <a href="ts_en.html?q=learn+english" class="trending-tag">Learn English</a>
+          <a href="ts_en.html?q=bitcoin" class="trending-tag">Bitcoin</a>
+          <a href="ts_en.html?q=ai+artificial+intelligence" class="trending-tag">AI & ChatGPT</a>
+          <a href="ts_en.html?q=forex+trading" class="trending-tag">Forex Trading</a>
+          <a href="ts_en.html?q=music+download" class="trending-tag">Music</a>
+          <a href="ts_en.html?q=memes+funny" class="trending-tag">Memes & Funny</a>
+          <a href="ts_en.html?q=nft" class="trending-tag">NFT</a>
+          <a href="ts_en.html?q=web3" class="trending-tag">Web3</a>
+          <a href="ts_en.html?q=gaming" class="trending-tag">Gaming</a>
+          <a href="ts_en.html?q=deals+coupons" class="trending-tag">Deals & Coupons</a>
+          <a href="ts_en.html?q=ebooks" class="trending-tag">eBooks</a>
+          <a href="ts_en.html?q=sports" class="trending-tag">Sports</a>
+          <a href="ts_en.html?q=anime" class="trending-tag">Anime</a>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="seo-section" style="margin-top:40px;">
+        <h2 class="seo-section-title">❓ Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">What is XTEA?</div>
+            <div class="faq-answer">XTEA is the #1 Telegram search engine that helps you discover and find Telegram channels, groups, and bots. With over 50,000 channels indexed across 143 countries, XTEA provides fast, accurate, and free search results for any topic you're interested in.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">How do I search for Telegram channels?</div>
+            <div class="faq-answer">Simply enter keywords related to your interest in the XTEA search box at the top of this page. You'll get instant results showing relevant Telegram channels, groups, and bots. Click on any result to view details and join directly on Telegram.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Is XTEA free to use?</div>
+            <div class="faq-answer">Yes, XTEA is 100% free to use. You can search for unlimited Telegram channels, groups, and bots without any registration or payment. We also offer a Pro version for an ad-free experience at xtea.app.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">How many Telegram channels does XTEA index?</div>
+            <div class="faq-answer">XTEA indexes over 50,000 Telegram channels, groups, and bots from 143 countries worldwide. Our database is updated in real-time to ensure you always find the latest and most relevant results.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Is XTEA safe to use?</div>
+            <div class="faq-answer">Yes, XTEA is completely safe. We don't require any personal information or Telegram login. All searches are private and we don't track or store your search history. Your privacy is our priority.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">How can I find Telegram groups by topic?</div>
+            <div class="faq-answer">You can find Telegram groups by topic by entering relevant keywords in the search box, or by browsing our popular categories like Crypto & Finance, News & Media, Technology, Education, and Entertainment. Each category page lists curated channels and groups for easy discovery.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">What's the difference between Telegram channels and groups?</div>
+            <div class="faq-answer">Telegram channels are one-way broadcast platforms where admins post content to subscribers — great for news, updates, and announcements. Groups are interactive spaces where all members can send messages and participate in discussions. XTEA helps you find both channels and groups.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Can I search for Telegram bots on XTEA?</div>
+            <div class="faq-answer">Yes! XTEA indexes Telegram bots alongside channels and groups. Simply search for bot-related keywords or the specific bot name to find useful automation tools, games, utilities, and more on Telegram.</div>
+          </div>
+        </div>
+      </section>
+
       <!-- Footer -->
-      <footer class="footer">
+      <footer class="footer" style="margin-top:40px;">
         <div class="footer-content">
           <div class="footer-links">
             <a href="https://xtea.app?source=footer" target="_blank">Pro Version</a>
+            <a href="channels/crypto.html">Crypto Channels</a>
+            <a href="channels/news.html">News Channels</a>
+            <a href="channels/tech.html">Tech Channels</a>
+            <a href="channels/education.html">Education</a>
+            <a href="channels/entertainment.html">Entertainment</a>
+            <a href="ts_en_group.html">Groups</a>
             <a href="privacy.html">Privacy Policy</a>
           </div>
-          <p class="footer-copy">© 2024 Telegram Search. All data sourced from public search engines.</p>
+          <p class="footer-copy">© 2024 XTEA - Telegram Search Engine. All data sourced from public search engines.</p>
         </div>
       </footer>
     </div>

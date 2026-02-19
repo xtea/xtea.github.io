@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xtea.io/ts_en.html</loc>
-    <lastmod>2026-02-08</lastmod>
+    <lastmod>2026-02-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://xtea.io/ts_en.html"/>
@@ -38,6 +38,36 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://xtea.io/ts_en_group.html"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://xtea.io/ts_group.html"/>
+  </url>
+  <url>
+    <loc>https://xtea.io/channels/crypto.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xtea.io/channels/news.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xtea.io/channels/tech.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xtea.io/channels/education.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xtea.io/channels/entertainment.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://xtea.io/index.html</loc>
