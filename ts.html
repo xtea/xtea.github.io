@@ -5,138 +5,666 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="twitter:card" content="summary" />
-    <meta name="description" content="XTEA 电报搜索 - 全网最全的 Telegram 群组、频道、机器人索引。支持群组、聊天记录和账号搜索。" />
-    <meta name="keywords" content="telegram搜索,电报群,电报搜索,telegram群组,tg搜索,电报频道" />
-    <meta name="robots" content="index, follow" />
+    <meta name="description" content="XTEA 电报搜索 - 全网最强 Telegram 搜索引擎。搜索50,000+电报群组、频道、机器人，覆盖143个国家，实时更新，完全免费。" />
+    <meta name="keywords" content="telegram搜索,电报群,电报搜索,telegram群组,tg搜索,电报频道,telegram channel,电报群搜索,tg群,telegram机器人" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://xtea.io/ts.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://xtea.io/ts.html" />
-    <link rel="shortcut icon" href="img/2020/favicon.ico" type="image/x-icon" />
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta property="og:title" content="XTEA 电报搜索 - Telegram 群组/频道/机器人搜索引擎" />
+    <meta property="og:description" content="全网最强 Telegram 搜索引擎。搜索50,000+电报群组、频道、机器人，覆盖143个国家。" />
+    <meta property="og:site_name" content="XTEA" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="XTEA 电报搜索 - Telegram 群组/频道/机器人搜索引擎" />
+    <meta name="twitter:description" content="搜索50,000+ Telegram 群组、频道、机器人，覆盖143个国家，完全免费。" />
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PNTGKNM');</script>
+
+    <!-- AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8099937387516501"
      crossorigin="anonymous"></script>
-    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
-    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
-     <style>
-     	/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.page-header {
-    margin: 20px 0 20px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  background-color: #f5f5f5;
-}
 
+    <style>
+      :root {
+        --primary: #0088cc;
+        --primary-dark: #006699;
+        --accent: #ff6b35;
+        --bg-start: #0f0c29;
+        --bg-mid: #302b63;
+        --bg-end: #24243e;
+        --card-bg: rgba(255, 255, 255, 0.95);
+        --text-dark: #1a1a2e;
+        --text-light: #64748b;
+      }
 
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-.container .text-muted {
-  margin: 10px 0;
-}
+      * { box-sizing: border-box; }
 
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
+      html { position: relative; min-height: 100%; }
 
-code {
-  font-size: 80%;
-}
-</style>
- <script type="text/javascript">
+      body {
+        font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+        background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-mid) 50%, var(--bg-end) 100%);
+        background-attachment: fixed;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        color: var(--text-dark);
+      }
 
-  </script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39391643-2"></script>
-	<script>
-    var jsLoaded = false;
-    setTimeout("callback()", 4500);
-    function callback() {
-        if (!jsLoaded) {
-            document.getElementById("error").setAttribute("class", "alert alert-danger");
-        }
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-image:
+          radial-gradient(circle at 20% 80%, rgba(0, 136, 204, 0.15) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+          radial-gradient(circle at 40% 40%, rgba(136, 0, 204, 0.08) 0%, transparent 40%);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .main-wrapper {
+        position: relative;
+        z-index: 1;
+        padding: 20px 15px 80px;
+      }
+
+      .header-section {
+        text-align: center;
+        padding: 30px 20px;
+        margin-bottom: 20px;
+      }
+
+      .logo-container {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 15px;
+      }
+
+      .telegram-icon {
+        width: 50px; height: 50px;
+        background: linear-gradient(135deg, #0088cc 0%, #00aaff 100%);
+        border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        box-shadow: 0 8px 32px rgba(0, 136, 204, 0.4);
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+      }
+
+      .telegram-icon svg { width: 28px; height: 28px; fill: white; }
+
+      .site-title {
+        font-size: 2.2rem; font-weight: 700; color: #fff;
+        text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        margin: 0; letter-spacing: -0.5px;
+      }
+      .site-title a { color: inherit; text-decoration: none; transition: all 0.3s ease; }
+      .site-title a:hover { color: #00d4ff; text-shadow: 0 0 30px rgba(0, 212, 255, 0.5); }
+
+      .badge-free {
+        display: inline-block;
+        background: linear-gradient(135deg, var(--accent) 0%, #ff8f5a 100%);
+        color: white; padding: 4px 12px; border-radius: 20px;
+        font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+        letter-spacing: 0.5px; margin-left: 10px; vertical-align: middle;
+        box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+      }
+
+      .tagline { color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-top: 10px; font-weight: 400; }
+
+      .nav-tabs-custom {
+        display: flex; justify-content: center; gap: 15px; margin-bottom: 20px;
+      }
+      .nav-tabs-custom a {
+        color: rgba(255,255,255,0.7); text-decoration: none; padding: 8px 20px;
+        border-radius: 20px; font-size: 0.9rem; transition: all 0.3s ease;
+        border: 1px solid rgba(255,255,255,0.2);
+      }
+      .nav-tabs-custom a:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
+      .nav-tabs-custom a.active {
+        background: var(--primary); color: #fff; border-color: var(--primary);
+      }
+
+      .content-card {
+        background: var(--card-bg); border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        overflow: hidden; max-width: 1200px; margin: 0 auto;
+      }
+      .card-inner { padding: 25px; }
+
+      .pro-banner {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 10px 16px; border-radius: 10px;
+        display: flex; align-items: center; justify-content: space-between;
+        gap: 10px; margin-bottom: 15px;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.25);
+      }
+      .pro-banner-text { display: flex; align-items: center; gap: 8px; }
+      .pro-icon { font-size: 1.2rem; }
+      .pro-banner h4 { margin: 0; color: white; font-size: 0.85rem; font-weight: 600; }
+      .pro-btn {
+        display: inline-flex; align-items: center; gap: 6px;
+        background: white; color: #667eea; padding: 8px 16px;
+        border-radius: 20px; font-weight: 600; text-decoration: none;
+        transition: all 0.3s ease; font-size: 0.8rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); white-space: nowrap;
+      }
+      .pro-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); color: #764ba2; text-decoration: none; }
+
+      .ad-container {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        border-radius: 12px; padding: 15px; margin: 20px 0;
+        text-align: center; min-height: 100px;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .ad-label { font-size: 0.7rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+
+      .search-frame-container { border-radius: 12px; overflow: hidden; box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.05); }
+      iframe { border: none; width: 100%; height: 700px; -webkit-overflow-scrolling: touch; display: block; }
+
+      /* Stats Bar */
+      .stats-bar { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 30px auto; max-width: 1200px; padding: 20px; }
+      .stat-item { text-align: center; color: #fff; }
+      .stat-number { font-size: 1.8rem; font-weight: 700; background: linear-gradient(135deg, #00d4ff, #0088cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+      .stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-top: 4px; }
+
+      /* SEO Sections */
+      .seo-section { max-width: 1200px; margin: 30px auto 0; padding: 0 15px; }
+      .seo-section-title { color: #fff; font-size: 1.6rem; font-weight: 700; text-align: center; margin-bottom: 25px; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+      .seo-section-subtitle { color: rgba(255,255,255,0.7); text-align: center; margin-top: -15px; margin-bottom: 25px; font-size: 0.95rem; }
+
+      .categories-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; }
+      .category-card {
+        background: var(--card-bg); border-radius: 14px; padding: 20px 12px;
+        text-align: center; text-decoration: none; color: var(--text-dark);
+        transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      }
+      .category-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,136,204,0.3); text-decoration: none; color: var(--primary); }
+      .category-icon { font-size: 2rem; margin-bottom: 8px; display: block; }
+      .category-name { font-size: 0.85rem; font-weight: 600; }
+
+      .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+      .step-card { background: var(--card-bg); border-radius: 16px; padding: 25px 20px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+      .step-number { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary) 0%, #00aaff 100%); color: #fff; border-radius: 50%; font-weight: 700; font-size: 1.1rem; margin-bottom: 12px; }
+      .step-card h3 { font-size: 1rem; font-weight: 600; margin: 0 0 8px; color: var(--text-dark); }
+      .step-card p { font-size: 0.85rem; color: var(--text-light); margin: 0; }
+
+      .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+      .feature-card { background: var(--card-bg); border-radius: 16px; padding: 25px 20px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+      .feature-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+      .feature-card h3 { font-size: 1rem; font-weight: 600; margin: 0 0 8px; }
+      .feature-card p { font-size: 0.85rem; color: var(--text-light); margin: 0; }
+
+      .trending-tags { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+      .trending-tag {
+        background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+        color: rgba(255,255,255,0.9); padding: 8px 16px; border-radius: 20px;
+        text-decoration: none; font-size: 0.85rem; transition: all 0.3s ease;
+      }
+      .trending-tag:hover { background: var(--primary); border-color: var(--primary); color: #fff; text-decoration: none; transform: translateY(-2px); }
+
+      .faq-list { max-width: 800px; margin: 0 auto; }
+      .faq-item { background: var(--card-bg); border-radius: 12px; margin-bottom: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+      .faq-question { padding: 18px 20px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem; user-select: none; }
+      .faq-question::after { content: '+'; font-size: 1.3rem; color: var(--primary); transition: transform 0.3s ease; }
+      .faq-item.active .faq-question::after { transform: rotate(45deg); }
+      .faq-answer { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; font-size: 0.9rem; color: var(--text-light); line-height: 1.6; }
+      .faq-item.active .faq-answer { padding: 0 20px 18px; max-height: 300px; }
+
+      .footer {
+        background: rgba(15, 12, 41, 0.95); backdrop-filter: blur(10px);
+        padding: 20px 0; text-align: center; margin-top: 30px;
+      }
+      .footer-content { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+      .footer-links { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-bottom: 15px; }
+      .footer-links a { color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 0.9rem; transition: color 0.3s ease; }
+      .footer-links a:hover { color: #00d4ff; }
+      .footer-copy { color: rgba(255, 255, 255, 0.5); font-size: 0.85rem; margin: 0; }
+
+      @media (max-width: 768px) {
+        .site-title { font-size: 1.6rem; }
+        .header-section { padding: 20px 15px; }
+        .card-inner { padding: 15px; }
+        .pro-banner { padding: 8px 12px; gap: 8px; }
+        .pro-banner h4 { font-size: 0.75rem; }
+        .pro-btn { padding: 6px 12px; font-size: 0.75rem; }
+        iframe { height: 600px; }
+        .logo-container { flex-direction: column; gap: 8px; }
+        .categories-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+        .stat-number { font-size: 1.4rem; }
+        .stats-bar { gap: 15px; }
+        .seo-section-title { font-size: 1.3rem; }
+      }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTG41DQTYK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MTG41DQTYK');
+    </script>
+
+    <title>XTEA 电报搜索 - Telegram 群组/频道/机器人搜索引擎</title>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "XTEA 电报搜索",
+      "url": "https://xtea.io",
+      "description": "全网最强 Telegram 搜索引擎，搜索50,000+群组、频道、机器人。",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://xtea.io/ts.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-39391643-2');
-	</script>
-
-	 <title>名刀电报群搜索- TG中文频道/群组/搜群神器/导航群</title>
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "XTEA",
+      "url": "https://xtea.io",
+      "logo": "https://xtea.io/favicon.ico",
+      "description": "XTEA 是全球领先的 Telegram 搜索引擎，帮助用户发现频道、群组和机器人，覆盖143个国家。"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "XTEA 是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "XTEA 是全网最强的 Telegram 搜索引擎，帮助你快速发现和搜索电报群组、频道和机器人。索引超过50,000个频道，覆盖143个国家，提供快速、精准、免费的搜索服务。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "如何搜索 Telegram 群组？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "只需在 XTEA 搜索框中输入你感兴趣的关键词即可。你可以搜索群组名称、主题或任何相关关键词，立即获得相关的电报群组、频道和机器人结果。点击结果即可直接加入。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "XTEA 是免费的吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的，XTEA 100% 免费使用。你可以无限次搜索电报群组、频道和机器人，无需注册或付费。我们还提供 Pro 版本（xtea.app）享受无广告体验。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "XTEA 索引了多少个 Telegram 频道？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "XTEA 索引了来自143个国家的超过50,000个 Telegram 频道、群组和机器人。数据库实时更新，确保你始终能找到最新、最相关的结果。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "XTEA 安全吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "完全安全。XTEA 不需要任何个人信息或 Telegram 登录。所有搜索都是私密的，我们不会追踪或存储你的搜索记录。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "电报频道和群组有什么区别？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "电报频道是单向广播平台，管理员发布内容给订阅者，适合新闻和公告。群组是互动空间，所有成员都可以发消息和参与讨论。XTEA 帮你同时搜索频道和群组。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "如何按主题查找电报群？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "你可以在搜索框输入相关关键词来按主题查找，也可以浏览我们的热门分类如加密货币、新闻资讯、科技数码、学习教育和影视娱乐等。每个分类页面都有精选的频道和群组。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以在 XTEA 上搜索电报机器人吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "当然可以！XTEA 同时索引了电报机器人、频道和群组。只需搜索机器人相关关键词或具体的机器人名称，即可找到各类实用工具、游戏和自动化机器人。"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
-    
-    <div class="container">
-      <div>
-      <ol class="breadcrumb">
-        <li class="active">综合版</li>
-        <li><a href="ts_group.html">群组版</a></li>
-      </ol>
-    </div>
- <!--    <p class="alert alert-success">电报群搜索机器人已经上线， 欢迎进入群组搜索 <a href="https://t.me/mingdaoso">@hao6bot</a></p>   -->
-      <div class="page-header">
-        <h2 class="text-center">
-          <a href="">名刀电报搜索</a>
-          <span class="badge badge-info" title="仅支持搜索群组.">综合版</span>
-        </h2>
-      </div>
-      <blockquote>
-          <p>小技巧 ! 可以使用多个关键词（空格分开）进行搜索。例如：</p>
-         <ul>
-            <li><a href="ts.html#gsc.tab=0&gsc.q=比特币%20群&gsc.sort=">比特币 群</a></li>
-            <li><a href="ts.html#gsc.tab=0&gsc.q=北京%20群&gsc.sort=">北京 群</a></li>
-          </ul>    
-      </blockquote>
-      <div id="error" class="alert alert-danger hidden" role="alert">
-          <h4>错误！</h4>
-          检测到你无法访问谷歌，请开启科学上网。 或安装谷歌助手后访问
-          <a href="https://zhuanlan.zhihu.com/p/101009818" target="blank">参考教程 </a> 
-          ，还有问题请 <a href="https://support.qq.com/product/113664" target="blank">点击反馈。</a> 
-      </div>    
-     <!-- 电报搜索-banner -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-8099937387516501"
-         data-ad-slot="9492336661"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-     <script async src="https://cse.google.com/cse.js?cx=006249643689853114236:meozern20ky" onload='jsLoaded=true'></script>
-	   <div class="gcse-search"></div>
-   
-  
-    </div>
-     <!-- Begin page content -->
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">
-          免责声明：本站全部数据均来自Google搜索引擎，本站不提供任何后台数据服务. 如果有任何问题请及时与管理员联系。
-        </p>
-      </div>
-    </footer>
-  </body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNTGKNM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
+    <div class="main-wrapper">
+
+      <!-- Header -->
+      <header class="header-section">
+        <div class="logo-container">
+          <div class="telegram-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+          </div>
+          <h1 class="site-title">
+            <a href="ts.html">电报搜索</a>
+            <span class="badge-free">免费</span>
+          </h1>
+        </div>
+        <p class="tagline">🔍 一键搜索 Telegram 群组、频道、机器人</p>
+      </header>
+
+      <!-- Navigation Tabs -->
+      <div class="nav-tabs-custom">
+        <a href="ts.html" class="active">综合搜索</a>
+        <a href="ts_group.html">群组搜索</a>
+        <a href="ts_en.html">English</a>
+      </div>
+
+      <!-- Main Content Card -->
+      <div class="content-card">
+        <div class="card-inner">
+
+          <!-- Pro Banner -->
+          <div class="pro-banner">
+            <div class="pro-banner-text">
+              <span class="pro-icon">✨</span>
+              <h4>升级 Pro 版 - 无广告极速体验</h4>
+            </div>
+            <a href="https://xtea.app?source=xtea_zh_click" class="pro-btn">
+              立即升级 →
+            </a>
+          </div>
+
+          <!-- Top Ad -->
+          <div class="ad-container">
+            <div style="width: 100%;">
+              <div class="ad-label">广告</div>
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-8099937387516501"
+                   data-ad-slot="9492336661"
+                   data-ad-format="horizontal"
+                   data-full-width-responsive="true"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+          </div>
+
+          <!-- Search Frame -->
+          <div class="search-frame-container">
+            <iframe id="search-frame" src="https://xtea.pages.dev/search" loading="lazy"></iframe>
+            <script>
+              (function() {
+                var params = new URLSearchParams(window.location.search);
+                var q = params.get('q');
+                if (q) {
+                  var frame = document.getElementById('search-frame');
+                  frame.src = 'https://xtea.pages.dev/search?q=' + encodeURIComponent(q);
+                }
+              })();
+            </script>
+          </div>
+
+          <!-- Bottom Ad -->
+          <div class="ad-container">
+            <div style="width: 100%;">
+              <div class="ad-label">广告</div>
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-8099937387516501"
+                   data-ad-slot="9492336661"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-number">50,000+</div>
+          <div class="stat-label">已索引频道</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1,000万+</div>
+          <div class="stat-label">累计搜索次数</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">143</div>
+          <div class="stat-label">覆盖国家</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">实时更新</div>
+        </div>
+      </div>
+
+      <!-- Popular Categories -->
+      <section class="seo-section">
+        <h2 class="seo-section-title">📂 热门分类</h2>
+        <p class="seo-section-subtitle">按主题浏览电报频道和群组</p>
+        <div class="categories-grid">
+          <a href="channels/news.html" class="category-card">
+            <span class="category-icon">📰</span>
+            <span class="category-name">新闻资讯</span>
+          </a>
+          <a href="channels/crypto.html" class="category-card">
+            <span class="category-icon">💰</span>
+            <span class="category-name">加密货币</span>
+          </a>
+          <a href="channels/education.html" class="category-card">
+            <span class="category-icon">🎓</span>
+            <span class="category-name">学习教育</span>
+          </a>
+          <a href="channels/entertainment.html" class="category-card">
+            <span class="category-icon">🎬</span>
+            <span class="category-name">影视娱乐</span>
+          </a>
+          <a href="channels/tech.html" class="category-card">
+            <span class="category-icon">💻</span>
+            <span class="category-name">科技数码</span>
+          </a>
+          <a href="ts_group.html" class="category-card">
+            <span class="category-icon">💬</span>
+            <span class="category-name">中文群组</span>
+          </a>
+          <a href="ts.html?q=代购+优惠" class="category-card">
+            <span class="category-icon">🛒</span>
+            <span class="category-name">购物优惠</span>
+          </a>
+          <a href="ts.html?q=旅游+签证" class="category-card">
+            <span class="category-icon">🌍</span>
+            <span class="category-name">旅游出行</span>
+          </a>
+          <a href="ts.html?q=工具+软件" class="category-card">
+            <span class="category-icon">📱</span>
+            <span class="category-name">工具软件</span>
+          </a>
+          <a href="ts.html?q=音乐" class="category-card">
+            <span class="category-icon">🎵</span>
+            <span class="category-name">音乐</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- How to Use -->
+      <section class="seo-section" style="margin-top:40px;">
+        <h2 class="seo-section-title">🚀 如何使用 XTEA</h2>
+        <p class="seo-section-subtitle">三步搜到你想要的电报群</p>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>输入关键词</h3>
+            <p>在上方搜索框中输入任何主题、频道名称或关键词。XTEA 会在数万个已索引的 Telegram 频道和群组中搜索。</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>浏览结果</h3>
+            <p>查看搜索结果，包含频道描述、订阅人数和分类信息。轻松找到你想要的内容。</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>一键加入</h3>
+            <p>点击任意结果即可在 Telegram 中直接打开。无需注册，即搜即用，立刻加入频道或群组。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why XTEA -->
+      <section class="seo-section" style="margin-top:40px;">
+        <h2 class="seo-section-title">✨ 为什么选择 XTEA？</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <span class="feature-icon">🔍</span>
+            <h3>精准搜索</h3>
+            <p>先进的搜索引擎，精准定位相关的 Telegram 频道、群组和机器人。</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">⚡</span>
+            <h3>实时索引</h3>
+            <p>数据库持续更新，收录最新频道和最新鲜的 Telegram 内容。</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🛡️</span>
+            <h3>安全隐私</h3>
+            <p>无需登录，不追踪搜索记录，不存储个人数据，放心使用。</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🆓</span>
+            <h3>完全免费</h3>
+            <p>无限次搜索，零费用。没有订阅，没有隐藏收费，纯粹的电报发现工具。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending Searches -->
+      <section class="seo-section" style="margin-top:40px;">
+        <h2 class="seo-section-title">🔥 热门搜索</h2>
+        <div class="trending-tags">
+          <a href="ts.html?q=比特币" class="trending-tag">比特币</a>
+          <a href="ts.html?q=新闻" class="trending-tag">新闻</a>
+          <a href="ts.html?q=炒股" class="trending-tag">炒股</a>
+          <a href="ts.html?q=电影" class="trending-tag">电影</a>
+          <a href="ts.html?q=AI+人工智能" class="trending-tag">AI 人工智能</a>
+          <a href="ts.html?q=科学上网" class="trending-tag">科学上网</a>
+          <a href="ts.html?q=加密货币" class="trending-tag">加密货币</a>
+          <a href="ts.html?q=学英语" class="trending-tag">学英语</a>
+          <a href="ts.html?q=游戏" class="trending-tag">游戏</a>
+          <a href="ts.html?q=美食" class="trending-tag">美食</a>
+          <a href="ts.html?q=外汇" class="trending-tag">外汇</a>
+          <a href="ts.html?q=编程+开发" class="trending-tag">编程开发</a>
+          <a href="ts.html?q=二手交易" class="trending-tag">二手交易</a>
+          <a href="ts.html?q=直播" class="trending-tag">直播</a>
+          <a href="ts.html?q=搞笑" class="trending-tag">搞笑</a>
+          <a href="ts.html?q=兼职+副业" class="trending-tag">兼职副业</a>
+          <a href="ts.html?q=留学" class="trending-tag">留学</a>
+          <a href="ts.html?q=动漫" class="trending-tag">动漫</a>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="seo-section" style="margin-top:40px;">
+        <h2 class="seo-section-title">❓ 常见问题</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">XTEA 是什么？</div>
+            <div class="faq-answer">XTEA 是全网最强的 Telegram 搜索引擎，帮助你快速发现和搜索电报群组、频道和机器人。索引超过50,000个频道，覆盖143个国家，提供快速、精准、免费的搜索服务。</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">如何搜索 Telegram 群组？</div>
+            <div class="faq-answer">只需在搜索框中输入你感兴趣的关键词即可。你可以搜索群组名称、主题或任何相关关键词，立即获得相关的电报群组、频道和机器人结果。点击结果即可直接加入。</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">XTEA 是免费的吗？</div>
+            <div class="faq-answer">是的，XTEA 100% 免费使用。你可以无限次搜索电报群组、频道和机器人，无需注册或付费。我们还提供 Pro 版本（xtea.app）享受无广告极速体验。</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">XTEA 索引了多少个频道？</div>
+            <div class="faq-answer">XTEA 索引了来自143个国家的超过50,000个 Telegram 频道、群组和机器人。数据库实时更新，确保你始终能找到最新、最相关的结果。</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">XTEA 安全吗？</div>
+            <div class="faq-answer">完全安全。XTEA 不需要任何个人信息或 Telegram 登录。所有搜索都是私密的，我们不会追踪或存储你的搜索记录。你的隐私是我们的优先事项。</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">电报频道和群组有什么区别？</div>
+            <div class="faq-answer">电报频道是单向广播平台，管理员发布内容给订阅者，适合新闻、更新和公告。群组是互动空间，所有成员都可以发消息和参与讨论。XTEA 帮你同时搜索频道和群组。</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">如何按主题查找电报群？</div>
+            <div class="faq-answer">你可以在搜索框输入相关关键词来按主题查找，也可以浏览我们的热门分类如加密货币、新闻资讯、科技数码、学习教育和影视娱乐等。每个分类页面都有精选的频道和群组。</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">可以搜索电报机器人吗？</div>
+            <div class="faq-answer">当然可以！XTEA 同时索引了电报机器人、频道和群组。只需搜索机器人相关关键词或具体的机器人名称，即可找到各类实用工具、游戏和自动化机器人。</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer" style="margin-top:40px;">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="https://xtea.app?source=footer_zh" target="_blank">Pro 版本</a>
+            <a href="channels/crypto.html">加密频道</a>
+            <a href="channels/news.html">新闻频道</a>
+            <a href="channels/tech.html">科技频道</a>
+            <a href="channels/education.html">学习教育</a>
+            <a href="channels/entertainment.html">影视娱乐</a>
+            <a href="ts_group.html">群组搜索</a>
+            <a href="ts_en.html">English</a>
+            <a href="privacy.html">隐私政策</a>
+          </div>
+          <p class="footer-copy">© 2024 XTEA - 电报搜索引擎。所有数据均来自公开搜索引擎。</p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
