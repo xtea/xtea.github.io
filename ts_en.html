@@ -43,10 +43,12 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
     
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"></noscript>
     
     <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
@@ -651,8 +653,31 @@ iframe {
       "name": "XTEA",
       "url": "https://xtea.io",
       "logo": "https://xtea.io/favicon.ico",
-      "sameAs": [],
+      "sameAs": ["https://github.com/xtea", "https://twitter.com/xtea_li"],
       "description": "XTEA is the leading Telegram search engine, helping users discover channels, groups, and bots across 143 countries."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://xtea.io/"},
+        {"@type": "ListItem", "position": 2, "name": "Telegram Search", "item": "https://xtea.io/ts_en.html"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Search for Telegram Channels, Groups & Bots",
+      "description": "Find any Telegram channel, group, or bot in 3 simple steps using XTEA.",
+      "step": [
+        {"@type": "HowToStep", "position": 1, "name": "Enter Keywords", "text": "Type any topic, channel name, or keyword into the XTEA search box. XTEA searches across thousands of indexed Telegram channels and groups.", "url": "https://xtea.io/ts_en.html"},
+        {"@type": "HowToStep", "position": 2, "name": "Browse Results", "text": "Explore the search results with channel descriptions, subscriber counts, and categories. Filter to find exactly what you're looking for."},
+        {"@type": "HowToStep", "position": 3, "name": "Join & Enjoy", "text": "Click on any result to open it directly in Telegram. Join channels, groups, or start using bots instantly — no registration needed."}
+      ]
     }
     </script>
     <script type="application/ld+json">
@@ -1012,7 +1037,7 @@ iframe {
             <a href="ts_en_group.html">Groups</a>
             <a href="privacy.html">Privacy Policy</a>
           </div>
-          <p class="footer-copy">© 2024 XTEA - Telegram Search Engine. All data sourced from public search engines.</p>
+          <p class="footer-copy">© 2024-2026 XTEA - Telegram Search Engine. All data sourced from public search engines.</p>
         </div>
       </footer>
     </div>
