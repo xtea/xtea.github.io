@@ -79,6 +79,7 @@ html {
       
 body {
         font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 16px;
         background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-mid) 50%, var(--bg-end) 100%);
         background-attachment: fixed;
         min-height: 100vh;
@@ -182,7 +183,7 @@ body {
       
       .tagline {
         color: rgba(255, 255, 255, 0.8);
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin-top: 10px;
         font-weight: 400;
       }
@@ -338,7 +339,7 @@ body {
       .footer-links a {
         color: rgba(255, 255, 255, 0.7);
         text-decoration: none;
-        font-size: 0.9rem;
+        font-size: 1rem;
         transition: color 0.3s ease;
       }
       
@@ -348,45 +349,93 @@ body {
       
       .footer-copy {
         color: rgba(255, 255, 255, 0.5);
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         margin: 0;
       }
       
       /* Responsive */
       @media (max-width: 768px) {
         .site-title {
-          font-size: 1.6rem;
+          font-size: 1.8rem;
         }
-        
+
+        .tagline {
+          font-size: 1.1rem;
+        }
+
         .header-section {
           padding: 20px 15px;
         }
-        
-        .card-inner {
-          padding: 15px;
-        }
-        
-        .pro-banner {
-          padding: 8px 12px;
-          gap: 8px;
-        }
-        
-        .pro-banner h4 {
-          font-size: 0.75rem;
-        }
-        
-        .pro-btn {
-          padding: 6px 12px;
-          font-size: 0.75rem;
+
+        .main-wrapper {
+          padding: 12px 10px 60px;
         }
 
-iframe {
-          height: 600px;
+        .card-inner {
+          padding: 12px;
         }
-        
+
+        .pro-banner {
+          padding: 10px 14px;
+          gap: 8px;
+        }
+
+        .pro-banner h4 {
+          font-size: 0.8rem;
+        }
+
+        .pro-btn {
+          padding: 8px 14px;
+          font-size: 0.8rem;
+        }
+
+        iframe {
+          height: 75vh;
+          min-height: 500px;
+        }
+
         .logo-container {
           flex-direction: column;
           gap: 8px;
+        }
+
+        .step-card, .feature-card {
+          padding: 20px 16px;
+        }
+
+        .step-card h3, .feature-card h3 {
+          font-size: 1.05rem;
+        }
+
+        .step-card p, .feature-card p {
+          font-size: 0.9rem;
+        }
+
+        .faq-question {
+          padding: 16px;
+          font-size: 1rem;
+        }
+
+        .faq-answer {
+          font-size: 0.95rem;
+        }
+
+        .faq-item.active .faq-answer {
+          padding: 0 16px 16px;
+        }
+
+        .trending-tag {
+          padding: 10px 16px;
+          font-size: 0.9rem;
+        }
+
+        .footer-links {
+          gap: 12px 20px;
+        }
+
+        .footer-links a {
+          font-size: 0.95rem;
+          padding: 4px 0;
         }
 }
 
@@ -398,7 +447,7 @@ iframe {
       }
       .seo-section-title {
         color: #fff;
-        font-size: 1.6rem;
+        font-size: 1.75rem;
         font-weight: 700;
         text-align: center;
         margin-bottom: 25px;
@@ -409,7 +458,7 @@ iframe {
         text-align: center;
         margin-top: -15px;
         margin-bottom: 25px;
-        font-size: 0.95rem;
+        font-size: 1.05rem;
       }
 
       /* Stats Bar */
@@ -427,7 +476,7 @@ iframe {
         color: #fff;
       }
       .stat-number {
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-weight: 700;
         background: linear-gradient(135deg, #00d4ff, #0088cc);
         -webkit-background-clip: text;
@@ -435,7 +484,7 @@ iframe {
         background-clip: text;
       }
       .stat-label {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
         color: rgba(255,255,255,0.6);
         margin-top: 4px;
       }
@@ -468,7 +517,7 @@ iframe {
         display: block;
       }
       .category-name {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
         font-weight: 600;
       }
 
@@ -499,15 +548,16 @@ iframe {
         margin-bottom: 12px;
       }
       .step-card h3 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 600;
         margin: 0 0 8px;
         color: var(--text-dark);
       }
       .step-card p {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
         color: var(--text-light);
         margin: 0;
+        line-height: 1.5;
       }
 
       /* Why XTEA */
@@ -529,14 +579,15 @@ iframe {
         display: block;
       }
       .feature-card h3 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 600;
         margin: 0 0 8px;
       }
       .feature-card p {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
         color: var(--text-light);
         margin: 0;
+        line-height: 1.5;
       }
 
       /* FAQ */
@@ -558,7 +609,7 @@ iframe {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 0.95rem;
+        font-size: 1.05rem;
         user-select: none;
       }
       .faq-question::after {
@@ -575,7 +626,7 @@ iframe {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease, padding 0.3s ease;
-        font-size: 0.9rem;
+        font-size: 1rem;
         color: var(--text-light);
         line-height: 1.6;
       }
@@ -595,10 +646,10 @@ iframe {
         background: rgba(255,255,255,0.1);
         border: 1px solid rgba(255,255,255,0.2);
         color: rgba(255,255,255,0.9);
-        padding: 8px 16px;
+        padding: 10px 18px;
         border-radius: 20px;
         text-decoration: none;
-        font-size: 0.85rem;
+        font-size: 0.95rem;
         transition: all 0.3s ease;
       }
       .trending-tag:hover {
@@ -614,9 +665,50 @@ iframe {
           grid-template-columns: repeat(3, 1fr);
           gap: 10px;
         }
-        .stat-number { font-size: 1.4rem; }
-        .stats-bar { gap: 15px; }
-        .seo-section-title { font-size: 1.3rem; }
+        .category-card {
+          padding: 16px 10px;
+        }
+        .category-icon {
+          font-size: 1.8rem;
+        }
+        .category-name {
+          font-size: 0.85rem;
+        }
+        .stat-number { font-size: 1.6rem; }
+        .stat-label { font-size: 0.9rem; }
+        .stats-bar { gap: 15px; padding: 15px 10px; }
+        .seo-section-title { font-size: 1.4rem; }
+        .seo-section-subtitle { font-size: 1rem; }
+        .steps-grid {
+          grid-template-columns: 1fr;
+          gap: 14px;
+        }
+        .features-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+        }
+        .seo-section {
+          padding: 0 10px;
+        }
+      }
+
+      /* Small phones */
+      @media (max-width: 400px) {
+        .categories-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+        .site-title {
+          font-size: 1.5rem;
+        }
+        .stats-bar {
+          gap: 10px;
+        }
+        .stat-item {
+          min-width: 70px;
+        }
       }
 </style>
     
